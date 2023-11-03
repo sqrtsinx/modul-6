@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <label for="emameun">Makanan = </label>
+            <td>
+                <select id="emameun">
+                    <option value="25000">Karedok Leunca</option>
+                    <option value="30000">Leupeut Bakar</option>
+                    <option value="50000">Lotek</option>
+                    <option value="15000">Garpit</option>
+                </select>
+            </td>
+            <label for="total">Total = </label>
+            <input type="text" id="total">
+
+            <label for="coupon">Coupon : </label>
+            <input type="text" id="coupon">
+
+            <button onclick="total()">Total</button>
+        </div>
+        <div class="result">
+            <p>Dahareun --> <span id="item"></span></p>
+            <p>Price --> <span id="quantity"></span></p>
+            <p>Coupon --> <span id="couponitem"></span></p>
+            <p>Results --> <span id="totalall"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
